@@ -37,52 +37,46 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontFamily: "Source Sans Pro"),
               ),
-              Container(
-                color: Colors.white,
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(
+                child: ListTile(
+                    horizontalTitleGap: 0,
+                    leading: Icon(
                       Icons.phone,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
+                    title: Text(
                       "+49 175 238023020",
                       style: TextStyle(
                           color: Colors.teal.shade900,
                           fontFamily: "Source Sans Pro",
                           fontSize: 20),
-                    )
-                  ],
+                    )),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  horizontalTitleGap: 0,
+                  leading: Icon(
+                    Icons.mail,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    "mersad@mersad.com",
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: "Source Sans Pro",
+                        fontSize: 20),
+                  ),
                 ),
               ),
-              Container(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      "mersad@mersad.com",
-                      style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: "Source Sans Pro",
-                          fontSize: 20),
-                    )
-                  ],
-                ),
-              )
             ],
           ),
         ),
